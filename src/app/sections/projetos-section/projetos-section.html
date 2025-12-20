@@ -1,0 +1,10 @@
+<div class="flex flex-col gap-12 pr-12 pt-12">
+  <div class="flex flex-col gap-12 items-end">
+    @for (projeto of projetos(); track projeto.name) {
+    <app-project-item [projeto]="projeto"></app-project-item>
+    }
+  </div>
+  <div class="flex justify-center">
+    <app-redirect-to [url]="'https://github.com/OtavioXavier?tab=repositories'" [text]="'Ver mais projetos'" />
+  </div>
+</div>

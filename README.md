@@ -1,59 +1,155 @@
-# OtavioPortifolio
+# Portfólio - Otavio Xavier
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.0.
+> Portfólio pessoal desenvolvido com Angular 21, apresentando minhas habilidades como Desenvolvedor Full-Stack. Interface moderna com design responsivo e navegação suave
 
-## Development server
+## 🚀 Sobre o Projeto
 
-To start a local development server, run:
+Este é um portfólio moderno e responsivo que apresenta minhas informações profissionais, experiência e projetos. O design foi criado com foco em uma experiência visual elegante e interativa, utilizando uma paleta de cores personalizada e animações suaves.
 
+## ✨ Características
+
+- **Design Moderno**: Interface limpa e profissional com background personalizado
+- **Navegação Suave**: Scroll suave entre seções com detecção automática da seção ativa
+- **Scrollbar Personalizada**: Estilo Apple com cor personalizada (#5D1E1E)
+- **Seleção de Texto Customizada**: Background personalizado para seleções de texto
+- **Fontes Customizadas**: JetBrains Mono e Jaro para tipografia única
+- **Responsivo**: Layout adaptável para diferentes tamanhos de tela
+
+## 🛠️ Tecnologias Utilizadas
+
+- **Angular 21**: Framework principal
+- **TypeScript**: Linguagem de programação
+- **TailwindCSS 4**: Framework de estilização
+- **SCSS**: Pré-processador CSS
+- **Lucide Angular**: Ícones modernos
+- **RxJS**: Programação reativa
+
+## 📁 Estrutura do Projeto
+
+```
+src/
+├── app/
+│   ├── components/
+│   │   ├── contact-list/      # Lista de contatos (GitHub, LinkedIn, Gmail, WhatsApp)
+│   │   └── section-list/      # Navegação entre seções
+│   ├── sections/
+│   │   └── sobre-section/     # Seção "Sobre"
+│   ├── app.ts                 # Componente principal
+│   ├── app.html               # Template principal
+│   ├── app.scss               # Estilos do componente principal
+│   └── app.routes.ts          # Configuração de rotas
+├── assets/
+│   └── fonts/                 # Fontes customizadas (JetBrains Mono, Jaro)
+├── styles.scss                # Estilos globais
+└── index.html                 # HTML principal
+```
+
+## 🎨 Seções
+
+O portfólio está organizado nas seguintes seções:
+
+- **Sobre**: Informações pessoais e profissionais
+- **Experiência**: Histórico profissional e habilidades
+- **Projetos**: Portfólio de projetos desenvolvidos
+
+## 🚦 Como Executar
+
+### Pré-requisitos
+
+- Node.js (versão 18 ou superior)
+- npm (versão 11.6.2 ou superior)
+
+### Instalação
+
+1. Clone o repositório:
 ```bash
+git clone <url-do-repositório>
+cd otavio-portifolio
+```
+
+2. Instale as dependências:
+```bash
+npm install
+```
+
+3. Execute o servidor de desenvolvimento:
+```bash
+npm start
+# ou
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+4. Abra seu navegador e acesse:
+```
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 📜 Scripts Disponíveis
 
-```bash
-ng generate --help
-```
+- `npm start` ou `ng serve`: Inicia o servidor de desenvolvimento
+- `npm run build` ou `ng build`: Compila o projeto para produção
+- `npm run watch`: Compila o projeto em modo watch (desenvolvimento)
+- `npm test` ou `ng test`: Executa os testes unitários
 
-## Building
+## 🎯 Funcionalidades Principais
 
-To build the project run:
+### Navegação Inteligente
+- Detecção automática da seção visível durante o scroll
+- Atualização da URL com hash da seção ativa
+- Scroll suave ao clicar nos links de navegação
 
-```bash
-ng build
-```
+### Componentes
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+#### SectionList
+Componente responsável pela navegação entre seções, com:
+- Detecção automática da seção ativa baseada no scroll
+- Sincronização com a URL (hash)
+- Scroll suave para as seções
 
-## Running unit tests
+#### ContactList
+Lista de contatos com links para:
+- GitHub
+- LinkedIn
+- Gmail
+- WhatsApp
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+#### SobreSection
+Seção dedicada a informações sobre o desenvolvedor.
 
-```bash
-ng test
-```
+## 🎨 Personalização
 
-## Running end-to-end tests
+### Cores
+A paleta de cores principal utiliza:
+- **Cor primária**: #5D1E1E (com variações de opacidade)
+- **Scrollbar**: rgba(93, 30, 30, 0.8)
+- **Seleção de texto**: rgba(93, 30, 30, 0.8)
 
-For end-to-end (e2e) testing, run:
+### Fontes
+- **JetBrains Mono**: Fonte monoespaçada para o corpo do texto
+- **Jaro**: Fonte variável para títulos e destaques
 
-```bash
-ng e2e
-```
+## 📝 Configuração
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+O projeto utiliza:
+- **Prettier**: Formatação de código (printWidth: 100, singleQuote: true)
+- **Angular CLI**: Ferramentas de desenvolvimento e build
+- **TailwindCSS**: Sistema de design utility-first
 
-## Additional Resources
+## 🤝 Contribuindo
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Este é um projeto pessoal, mas sugestões e feedback são sempre bem-vindos!
+
+## 📄 Licença
+
+Este projeto é de uso pessoal.
+
+## 📧 Contato
+
+- **Email**: otavio.xavier.dev@gmail.com
+- **LinkedIn**: [Otavio Xavier Marinho](https://www.linkedin.com/in/otavioxaviermarinho/)
+- **GitHub**: [OtavioXavier](https://github.com/OtavioXavier)
+- **WhatsApp**: +55 71 99974-3095
+
+---
+
+Desenvolvido por Otavio Xavier

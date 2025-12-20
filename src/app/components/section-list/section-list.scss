@@ -1,0 +1,62 @@
+.section-list {
+  > * + * {
+    margin-top: 2.5rem;
+  }
+}
+
+.section-item {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    .line {
+      background-color: white;
+      width: 8rem;
+    }
+
+    h2 {
+      opacity: 1;
+    }
+  }
+}
+
+.line {
+  height: 0.25rem;
+  border-radius: 9999px;
+  width: 4rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+h2 {
+  font-size: 1.125rem;
+  color: white;
+  opacity: 0.5;
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// Quando uma seção específica está ativa (usando atributo no body)
+:host-context(body[data-active-section='sobre']) .section-item[data-section='sobre'],
+:host-context(body[data-active-section='experiencia']) .section-item[data-section='experiencia'],
+:host-context(body[data-active-section='projetos']) .section-item[data-section='projetos'],
+body[data-active-section='sobre'] .section-item[data-section='sobre'],
+body[data-active-section='experiencia'] .section-item[data-section='experiencia'],
+body[data-active-section='projetos'] .section-item[data-section='projetos'] {
+  .line {
+    width: 8rem;
+    background-color: white;
+  }
+
+  h2 {
+    opacity: 1;
+  }
+}
+
+aside {
+  scroll-behavior: smooth;
+}

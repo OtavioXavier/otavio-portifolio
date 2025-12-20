@@ -1,0 +1,8 @@
+<div class="section-list">
+    @for (section of sections(); track section.id) {
+        <a href="#{{ section.id }}" class="section-item" [attr.data-section]="section.id" (click)="onSectionClick($event, section.id)">
+            <div class="line"></div>
+            <h2>{{ section.title }}</h2>
+        </a>
+    }
+</div>

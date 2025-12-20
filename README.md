@@ -6,9 +6,12 @@
 
 Este é um portfólio moderno e responsivo que apresenta minhas informações profissionais, experiência e projetos. O design foi criado com foco em uma experiência visual elegante e interativa, utilizando uma paleta de cores personalizada e animações suaves.
 
+📐 **Design no Figma**: [Visualizar protótipo](https://www.figma.com/design/uMudqWjub68vquVoLNg9Eh/Portfolio?node-id=2003-634&t=IW1ENrCQw4hrp2v9-1)
+
 ## ✨ Características
 
 - **Design Moderno**: Interface limpa e profissional com background personalizado
+- **Protótipo no Figma**: Design completo disponível para visualização
 - **Navegação Suave**: Scroll suave entre seções com detecção automática da seção ativa
 - **Scrollbar Personalizada**: Estilo Apple com cor personalizada (#5D1E1E)
 - **Seleção de Texto Customizada**: Background personalizado para seleções de texto

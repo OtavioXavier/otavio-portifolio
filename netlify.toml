@@ -1,0 +1,7 @@
+[build]
+  command = "ng build"
+  publish = "dist/otavio-portifolio/browser"
+
+[[plugins]]
+  package = "@netlify/angular-runtime"
+

@@ -1,0 +1,28 @@
+<a
+  href="{{ experiencia().link || '#' }}"
+  target="_blank"
+  class="flex gap-2 items-start hover:bg-[#EE2F4D]/10 w-[550px] p-6 rounded-xl transition-all duration-300 cursor-pointer"
+>
+  <p class="text-sm font-light text-gray-400 w-18">{{ experiencia().period }}</p>
+  <img [src]="experiencia().icon" [alt]="experiencia().name" class="w-16 h-16" />
+  <div class="flex flex-col gap-4 w-[355px]">
+    <div class="flex items-center gap-2">
+      <div class="flex flex-col gap-2">
+        <div class="flex items-center justify-between">
+          <a href="{{ experiencia().link }}" target="_blank" class="text-[16px] font-extrabold">{{
+            experiencia().name
+          }}</a>
+          @if (experiencia().link) {
+          <img src="./link-icon.svg" alt="ir para o link da experiência" class="w-4 h-4" />
+          }
+        </div>
+        <p class="text-sm font-light">{{ experiencia().description }}</p>
+      </div>
+    </div>
+    <div class="flex flex-wrap align-middle justify-center gap-2 justify-items-center items-center">
+      @for (tecnologia of experiencia().technologies; track tecnologia) {
+      <app-tecnologia-badge [tecnologia]="tecnologia" />
+      }
+    </div>
+  </div>
+</a>

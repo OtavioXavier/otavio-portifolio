@@ -1,0 +1,31 @@
+<div class="text-white pl-12 pr-12 pt-24 flex md:flex-row flex-col h-screen justify-between">
+  <main class="flex flex-col md:gap-32 gap-12">
+    <div class="md:w-[455px]">
+      <div class="flex items-center gap-2 mb-4">
+        <h1 class="text-3xl md:text-5xl">Otavio Xavier</h1>
+        <img src="./logo.svg" alt="óculos vermelhos" class="w-10 h-10 md:w-16 md:h-16" />
+      </div>
+      <h2 class="text-xl md:text-2xl font-medium mb-1.5">Desenvolvedor Full-Stack</h2>
+      <p class="text-lg md:text-xl font-light">
+        Eu vou criar a aplicação perfeita para você desde, dispositivos moveis a aplicações web.
+      </p>
+    </div>
+    <app-section-list />
+    <app-contact-list className="hidden md:flex" />
+  </main>
+  <aside class="md:overflow-y-scroll flex flex-col gap-12">
+    <section id="sobre" class="min-h-screen">
+      <app-header-section title="Sobre" />
+      <app-sobre-section />
+    </section>
+    <section id="experiencia" class="">
+      <app-header-section title="Experiência" />
+      <app-experiencia-section />
+    </section>
+    <section id="projetos" class="min-h-screen ">
+      <app-header-section title="Projetos" />
+      <app-projetos-section />
+    </section>
+  </aside>
+  <app-contact-list className="flex md:hidden mb-24" />
+</div>

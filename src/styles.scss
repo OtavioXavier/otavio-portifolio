@@ -32,6 +32,11 @@ body {
   font-family: 'JetBrains Mono', monospace;
   font-feature-settings: normal;
   font-variation-settings: normal;
+
+  /* Background image apenas em telas maiores que 768px */
+  @media (min-width: 768px) {
+    background-image: url('/background.jpg');
+  }
 }
 
 /* Scrollbar*/

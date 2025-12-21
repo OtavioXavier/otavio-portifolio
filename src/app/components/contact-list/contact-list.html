@@ -1,4 +1,4 @@
-<div class="contact-list flex items-center gap-11">
+<div [class]="'contact-list items-center gap-11 ' + className()">
   @for (contact of contacts(); track contact.name) {
   <a href="{{ contact.link }}" target="_blank" class="[&:not(:hover)]:opacity-80 transition-opacity duration-300">
     <img [src]="contact.icon" [alt]="contact.name" class="w-16 h-16" />

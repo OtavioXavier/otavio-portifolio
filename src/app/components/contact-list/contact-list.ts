@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, input, signal } from '@angular/core';
 
 @Component({
   selector: 'app-contact-list',
@@ -7,6 +7,8 @@ import { Component, signal } from '@angular/core';
   styleUrl: './contact-list.scss',
 })
 export class ContactList {
+  className = input<string>('');
+
   contacts = signal<{ name: string; icon: string; link: string }[]>([
     { name: 'GitHub', icon: './contacts-icons/github.svg', link: 'https://github.com/OtavioXavier' },
     { name: 'LinkedIn', icon: './contacts-icons/linkedin.svg', link: 'https://www.linkedin.com/in/otavioxaviermarinho/' },

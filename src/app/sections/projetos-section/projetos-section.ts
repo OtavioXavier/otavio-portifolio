@@ -26,5 +26,13 @@ export class ProjetosSection {
         'Aplicativo Full-Stack que utiliza a API do Gemini para gerar resumos e questões de qualquer assunto, oferecendo uma interface intuitiva e de fácil uso.',
       technologies: ['Next.js', 'TailwindCSS', 'TypeScript', 'Shadcn/UI', 'Supabase', 'Gemini API'],
     },
+    {
+      name: 'Node Clean Architecture (TDD)',
+      icon: './projects-thumbnails/nodejs-tdd.jpg',
+      link: 'https://github.com/OtavioXavier/node-clean-architeture-tdd',
+      description:
+        'Projeto de aprendizado em Clean Architecture aplicada a Node.js usando Test-Driven Development (TDD).',
+      technologies: ['Node.js', 'Express', 'MongoDB', 'Jest', 'JavaScript'],
+    },
   ]);
 }

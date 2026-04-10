@@ -40,7 +40,7 @@ export class ProjetosSection {
       link: 'https://github.com/OtavioXavier/ericaura-frontend',
       description:
         'Interface web do projeto EricAura, integrada à API backend para entregar a experiência do usuário.',
-      technologies: ['TypeScript', 'Angular', 'TailwindCSS'],
+      technologies: ['TypeScript', 'Next.js', 'TailwindCSS'],
     },
     {
       name: 'EricAura — Backend',
@@ -48,7 +48,7 @@ export class ProjetosSection {
       link: 'https://github.com/OtavioXavier/ericaura-backend',
       description:
         'API REST do EricAura em Spring Boot, com autenticação, regras de negócio e persistência de dados.',
-      technologies: ['Java', 'Spring Boot', 'Maven'],
+      technologies: ['Java', 'Spring Boot', 'Maven', 'PostgreSQL'],
     },
   ]);
 }

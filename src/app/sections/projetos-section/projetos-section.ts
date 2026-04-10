@@ -34,5 +34,21 @@ export class ProjetosSection {
         'Projeto de aprendizado em Clean Architecture aplicada a Node.js usando Test-Driven Development (TDD).',
       technologies: ['Node.js', 'Express', 'MongoDB', 'Jest', 'JavaScript'],
     },
+    {
+      name: 'EricAura — Frontend',
+      icon: './projects-thumbnails/ericaura-front.jpg',
+      link: 'https://github.com/OtavioXavier/ericaura-frontend',
+      description:
+        'Interface web do projeto EricAura, integrada à API backend para entregar a experiência do usuário.',
+      technologies: ['TypeScript', 'Angular', 'TailwindCSS'],
+    },
+    {
+      name: 'EricAura — Backend',
+      icon: './projects-thumbnails/spring-boot.jpg',
+      link: 'https://github.com/OtavioXavier/ericaura-backend',
+      description:
+        'API REST do EricAura em Spring Boot, com autenticação, regras de negócio e persistência de dados.',
+      technologies: ['Java', 'Spring Boot', 'Maven'],
+    },
   ]);
 }

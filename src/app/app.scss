@@ -1,1 +1,28 @@
+:host {
+  display: block;
+  min-height: 100%;
+}
 
+.cursor-flashlight {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  pointer-events: none;
+  background: radial-gradient(circle 600px at var(--flashlight-x, 50vw) var(--flashlight-y, 50vh),
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.06) 38%,
+      rgba(0, 0, 0, 0.22) 58%,
+      rgba(0, 0, 0, 0.38) 100%);
+}
+
+@media (pointer: coarse) {
+  .cursor-flashlight {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor-flashlight {
+    display: none;
+  }
+}

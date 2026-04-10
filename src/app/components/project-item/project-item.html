@@ -1,28 +1,25 @@
 <a
   href="{{ projeto().link || '#' }}"
   target="_blank"
-  class="flex md:flex-row flex-col gap-4 items-end hover:bg-[#EE2F4D]/10 md:w-[550px] p-6 rounded-xl transition-all duration-300 cursor-pointer"
+  class="flex flex-col gap-4 hover:bg-[#EE2F4D]/10 w-full max-w-[550px] p-6 rounded-xl transition-all duration-300 cursor-pointer"
 >
-  <div class="flex md:flex-row flex-col gap-2 items-start">
-    <div class="flex md:flex-row flex-col gap-4">
-      <img [src]="projeto().image" [alt]="projeto().name" class="w-60 h-32" />
-      <div class="flex flex-col gap-2">
-        <div class="flex items-center justify-between">
-          <a
-            href="{{ projeto().link }}"
-            target="_blank"
-            class="text-sm md:text-[16px] font-extrabold"
-            >{{ projeto().name }}</a
-          >
-          @if (projeto().link) {
-          <img src="./link-icon.svg" alt="ir para o link do projeto" class="w-4 h-4" />
-          }
-        </div>
-        <p class="text-sm font-light">{{ projeto().description }}</p>
+  <div class="flex md:flex-row flex-col gap-4 items-start w-full">
+    <div class="w-full md:w-80 shrink-0 aspect-video overflow-hidden rounded-lg bg-black/20">
+      <img [src]="projeto().icon" [alt]="projeto().name" class="w-full h-full object-cover" />
+    </div>
+    <div class="flex flex-col gap-2 min-w-0 flex-1">
+      <div class="flex items-center justify-between gap-2">
+        <a href="{{ projeto().link }}" target="_blank" class="text-[16px] font-extrabold">{{
+          projeto().name
+        }}</a>
+        @if (projeto().link) {
+        <img src="./link-icon.svg" alt="ir para o link do projeto" class="w-4 h-4 shrink-0" />
+        }
       </div>
+      <p class="text-sm font-light">{{ projeto().description }}</p>
     </div>
   </div>
-  <div class="flex flex-wrap align-middle justify-center gap-2 justify-items-center items-center">
+  <div class="flex flex-wrap justify-center content-center gap-2 w-full min-w-0">
     @for (tecnologia of projeto().technologies; track tecnologia) {
     <app-tecnologia-badge [tecnologia]="tecnologia" />
     }

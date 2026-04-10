@@ -4,10 +4,10 @@ import { RedirectTo } from '../../components/redirect-to/redirect-to';
 
 export interface IProjectItem {
   name: string;
-  image: string;
-  link: string;
+  icon: string;
+  link?: string;
   description: string;
-  technologies: string[];  
+  technologies: string[];
 }
 
 @Component({
@@ -20,9 +20,10 @@ export class ProjetosSection {
   projetos = signal<IProjectItem[]>([
     {
       name: 'Estuda+',
-      image: './projects-thumbnails/estuda-plus.jpg',
+      icon: './projects-thumbnails/estuda-plus.jpg',
       link: 'https://github.com/OtavioXavier/estuda-mais-reboot',
-      description: 'Aplicativo Full-Stack que utiliza a API do Gemini para gerar resumos e questões de qualquer assunto, oferecendo uma interface intuitiva e de fácil uso.',
+      description:
+        'Aplicativo Full-Stack que utiliza a API do Gemini para gerar resumos e questões de qualquer assunto, oferecendo uma interface intuitiva e de fácil uso.',
       technologies: ['Next.js', 'TailwindCSS', 'TypeScript', 'Shadcn/UI', 'Supabase', 'Gemini API'],
     },
   ]);
